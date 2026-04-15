@@ -1,12 +1,14 @@
 * {
     
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition-duration: 0.1s;
 }
 
 
 body {
     box-sizing: border-box;
     margin:0;
+    
 }
 :root{
 --slate-50: #F8FAFC;
@@ -48,10 +50,18 @@ div {
 }
 h1 {
     margin: 0;
-    color: var(--slate-800)
+    color: var(--slate-700);
+    font-size: 1.5rem;
+    line-height:1.75rem;
+}
+h2 {
+    font-size: 1.125rem;
+    color:var(--slate-600);
 }
 p {
     color:var(--slate-600);
+    font-size:0.875rem;
+    line-height: 1rem;
 }
 
 #list {
@@ -60,9 +70,8 @@ p {
     border: 0.125rem solid var(--slate-100);
     border-radius:1rem;
     list-style-type: disc;
-    color:var(--slate-600)
-    
-
+    color:var(--slate-600);
+    font-size:0.875rem;
 }
 
 header {
@@ -70,18 +79,22 @@ header {
     padding:1rem;
     
 }
+header p {
+    margin: 1rem 0 0 1;
+}
  header h1{
     background-color: var(--pri-50);
     padding:1rem;
     border: 0.5rem solid var(--pri-100);
     border-radius: 1rem;
     color:var(--pri-900);
+    font-size:1.5rem;
  }
 
 hr {
     border:none;
-    border-top: 1px solid var(--slate-200);
-    margin: 0rem 0 1rem 0;
+    border-top: 1px solid var(--slate-100);
+    margin: 0rem 0 0rem 0;
 }
 
 table {
@@ -89,7 +102,7 @@ table {
     border-collapse: collapse;
     background-color: white;
     text-align:left;
-    font-size:small;
+    font-size:0.875rem;
     color:var(--slate-500);
     border: 1px solid var(--slate-100);
     border-radius: 1rem;
@@ -105,12 +118,65 @@ th:hover{
 }
 
 tr{
-    border: 1px solid var(--slate-100);
+    border: 1px solid var(--slate-200);
 }
 .grey {
     background-color: var(--slate-50); 
 }
 .white{
-    font-size: small;
+    font-size: 0.875rem;;
     color: var(--slate-400)
+}
+
+#section {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap:4px;
+
+}
+
+sidebar {
+    display: flex;
+    
+    flex-direction: column;
+    border-right:1px solid var(--slate-200); 
+    padding:1rem;
+    flex-basis:1;
+    min-width:6rem;
+
+    
+}
+
+#stickyLinks {
+    margin: 0;
+    border:none;
+    padding:0;
+    position:sticky;
+    top:1rem;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    flex-basis:1;
+}
+
+sidebar a {
+    display:flex;
+    justify:center;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    color: var(--slate-700);
+    text-decoration: none;
+    font-size:0.875rem;
+    border-radius:0.25rem;
+    
+    text-align:left;
+}
+
+sidebar a:hover {
+    background-color:var(--pri-100);
+    color:var(--pri-300)
 }
