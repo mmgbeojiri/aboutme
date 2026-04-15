@@ -1,0 +1,78 @@
+* {
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    box-sizing: border-box;
+    margin:0;
+}
+:root{
+--slate-50: #F8FAFC;
+--slate-100: #F1F5F9;
+--slate-200: #E2E8F0;
+--slate-300: #CBD5E1;
+--slate-400: #94A3B8;
+--slate-500: #64748B;
+--slate-600: #475569;
+--slate-700: #334155;
+--slate-800: #1E293B;
+--slate-900: #0F172A;
+
+--pri-50: #F5F3FF;
+--pri-100: #EDE9FE;
+--pri-200: #DDD6FE;
+--pri-300: #C4B5FD;
+--pri-400: #A78BFA;
+--pri-500: #8B5CF6;
+--pri-600: #7C3AED;
+--pri-700: #6D28D9;
+--pri-800: #5B21B6;
+--pri-900: #4C1D95;
+/*colors are violet and slate from tailwind*/
+}
+
+
+div {
+    border: 0.1rem solid var(--slate-200); 
+    margin: 1rem;
+    border-radius: 1rem;
+    padding:1rem;
+}
+
+.subdiv {
+    padding:0;
+    margin: 0;
+    border:none;
+}
+h1 {
+    margin: 0;
+    color: var(--slate-800)
+}
+p {
+    color:var(--slate-600);
+}
+
+#list {
+    background: var(--slate-50);
+    padding: 1rem 2rem 1rem 2rem;
+    border: 0.125rem solid var(--slate-100);
+    border-radius:1rem;
+    list-style-type: disc;
+    color:var(--slate-600)
+    
+
+}
+
+header {
+    background: var(--pri-300);
+    padding:1rem;
+    
+}
+
+hr {
+    border:none;
+    border-top: 1px solid var(--slate-200);
+    margin: 0rem 0 1rem 0;
+}
