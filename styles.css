@@ -66,13 +66,51 @@ p {
 }
 
 header {
-    background: var(--pri-300);
+    
     padding:1rem;
     
 }
+ header h1{
+    background-color: var(--pri-50);
+    padding:1rem;
+    border: 0.5rem solid var(--pri-100);
+    border-radius: 1rem;
+    color:var(--pri-900);
+ }
 
 hr {
     border:none;
     border-top: 1px solid var(--slate-200);
     margin: 0rem 0 1rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    text-align:left;
+    font-size:small;
+    color:var(--slate-500);
+    border: 1px solid var(--slate-100);
+    border-radius: 1rem;
+}
+
+th {
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+th:hover{
+    background-color: white;
+    color:var(--pri-400);
+}
+
+tr{
+    border: 1px solid var(--slate-100);
+}
+.grey {
+    background-color: var(--slate-50); 
+}
+.white{
+    font-size: small;
+    color: var(--slate-400)
 }
