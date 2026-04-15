@@ -162,6 +162,8 @@ main {
     display:flex;
     flex-direction: column;
     flex-basis:1;
+    justify-self: center;
+    margin:auto;
 }
 
 sidebar a {
