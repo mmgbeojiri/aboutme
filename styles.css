@@ -3,7 +3,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition-duration: 0.1s;
 }
-
+.mySlides1, .mySlides2, .mySlides3 {display: none}
 
 body {
     box-sizing: border-box;
@@ -197,9 +197,7 @@ sidebar a:hover {
 }
 
 /* Hide the images by default */
-.mySlides {
-  display: none;
-}
+
 
 /* Next & previous buttons */
 .prev, .next {
